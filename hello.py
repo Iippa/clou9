@@ -6,9 +6,9 @@ app = Flask(__name__)
 @app.route('/login', methods=['GET'])
 def login():
     if request.values:
-        return "username is " + request.values['username']
+        return "username are " + request.values['username']
     else:
-        return '<form method="get" action="/login"><input type="text" name="username" /><p><button type="submit">Submit</button></form>'
+        return '<form method="get" action="/login">< input type="text" name="username" /><p><button type="submit">Submit</button></form>'
 
 if __name__ == '__main__':
     app.debug = True
